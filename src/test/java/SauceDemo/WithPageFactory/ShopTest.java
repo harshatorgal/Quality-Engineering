@@ -1,4 +1,4 @@
-package Shoping_With_PageFactory;
+package SauceDemo.WithPageFactory;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -9,7 +9,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class ShopTestClass {
+public class ShopTest {
     WebDriver driver;
 
     @BeforeTest
@@ -26,11 +26,11 @@ public class ShopTestClass {
 
     @Test
     public void Test1() {
-        ShopLogin login = new ShopLogin(driver);
-        ShopProduct product = new ShopProduct(driver);
-        ShopCart cart = new ShopCart(driver);
-        ShopCheckout checkout = new ShopCheckout(driver);
-        ShopPayment payment = new ShopPayment(driver);
+        ShopLoginPage login = new ShopLoginPage(driver);
+        ShopProductPage product = new ShopProductPage(driver);
+        ShopCartPage cart = new ShopCartPage(driver);
+        ShopCheckoutPage checkout = new ShopCheckoutPage(driver);
+        ShopPaymentPage payment = new ShopPaymentPage(driver);
 
         login.setShopLogin("standard_user", "secret_sauce");
 

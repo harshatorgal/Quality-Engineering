@@ -1,11 +1,11 @@
-package Shoping_With_PageFactory;
+package SauceDemo.WithPageFactory;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class ShopCart {
+public class ShopCartPage {
     WebDriver driver;
 
     @FindBy(className = "inventory_item_name")
@@ -13,7 +13,7 @@ public class ShopCart {
     @FindBy(id = "checkout")
     WebElement button;
 
-    ShopCart(WebDriver driver) {
+    ShopCartPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }

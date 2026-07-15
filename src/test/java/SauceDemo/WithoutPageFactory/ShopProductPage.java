@@ -1,11 +1,11 @@
-package Shoping_Without_PageFactory;
+package SauceDemo.WithoutPageFactory;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
-public class ShopProduct {
+public class ShopProductPage {
     WebDriver driver;
     By filter = By.className("product_sort_container");
     By addCart = By.id("add-to-cart-sauce-labs-fleece-jacket");
@@ -13,7 +13,7 @@ public class ShopProduct {
     By cartPage = By.className("shopping_cart_link");
 
 
-    ShopProduct(WebDriver driver) {
+    ShopProductPage(WebDriver driver) {
         this.driver = driver;
     }
 

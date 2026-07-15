@@ -1,9 +1,9 @@
-package Shoping_Without_PageFactory;
+package SauceDemo.WithoutPageFactory;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class ShopPayment {
+public class ShopPaymentPage {
     WebDriver driver;
     By productPrice = By.className("inventory_item_price");
     By itemTotal = By.className("summary_subtotal_label");
@@ -11,7 +11,7 @@ public class ShopPayment {
     By total = By.className("summary_total_label");
     By button = By.id("finish");
 
-    ShopPayment(WebDriver driver) {
+    ShopPaymentPage(WebDriver driver) {
         this.driver = driver;
     }
 

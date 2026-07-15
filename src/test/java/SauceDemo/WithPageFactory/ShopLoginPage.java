@@ -1,11 +1,11 @@
-package Shoping_With_PageFactory;
+package SauceDemo.WithPageFactory;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class ShopLogin {
+public class ShopLoginPage {
     WebDriver driver;
     @FindBy(id = "user-name")
     WebElement UN;
@@ -13,7 +13,8 @@ public class ShopLogin {
     WebElement PWD;
     @FindBy(id = "login-button")
     WebElement loginButton;
-    ShopLogin(WebDriver driver) {
+
+    ShopLoginPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }

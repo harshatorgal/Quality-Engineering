@@ -1,9 +1,9 @@
-package Shoping_Without_PageFactory;
+package SauceDemo.WithoutPageFactory;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class ShopCheckout {
+public class ShopCheckoutPage {
     WebDriver driver;
 
     By FN = By.name("firstName");
@@ -11,7 +11,7 @@ public class ShopCheckout {
     By Zipcode = By.name("postalCode");
     By button = By.id("continue");
 
-    ShopCheckout(WebDriver driver) {
+    ShopCheckoutPage(WebDriver driver) {
         this.driver = driver;
     }
 

@@ -1,9 +1,9 @@
-package Shoping_Without_PageFactory;
+package SauceDemo.WithoutPageFactory;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class ShopLogin {
+public class ShopLoginPage {
     WebDriver driver;
     //locators
     By UN = By.id("user-name");
@@ -11,7 +11,7 @@ public class ShopLogin {
     By loginButton = By.id("login-button");
 
     //constructor
-    ShopLogin(WebDriver driver) {
+    ShopLoginPage(WebDriver driver) {
         this.driver = driver;
     }
 

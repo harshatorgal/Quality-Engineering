@@ -1,14 +1,14 @@
-package Shoping_Without_PageFactory;
+package SauceDemo.WithoutPageFactory;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class ShopCart {
+public class ShopCartPage {
     WebDriver driver;
     By checkItem = By.className("inventory_item_name");
     By button = By.id("checkout");
 
-    ShopCart(WebDriver driver) {
+    ShopCartPage(WebDriver driver) {
         this.driver = driver;
     }
 

@@ -1,4 +1,4 @@
-package Shoping_With_PageFactory;
+package SauceDemo.WithPageFactory;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
-public class ShopProduct {
+public class ShopProductPage {
     WebDriver driver;
 
     @FindBy(className = "product_sort_container")
@@ -18,7 +18,7 @@ public class ShopProduct {
     @FindBy(className = "shopping_cart_link")
     WebElement cartPage;
 
-    ShopProduct(WebDriver driver) {
+    ShopProductPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
