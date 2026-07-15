@@ -6,9 +6,9 @@ import org.openqa.selenium.WebDriver;
 public class ProductPage {
     WebDriver driver;
 
-    By brands = By.linkText("[href=\"/brand_products/H&M\"]");
-    By addToCartButton = By.linkText("[href=\"javascript:void();\"]");
-    By cartPage = By.linkText("[href=\"/view_cart\"]");
+    By brands = By.cssSelector("a[href='/brand_products/H&M']");
+    By addToCartButton = By.xpath("(//a[@class='btn btn-default add-to-cart'])[1]");
+    By cartPage = By.cssSelector("a[href='/view_cart']");
     By itemPrice = By.cssSelector(".productinfo h2");
 
     ProductPage(WebDriver driver) {

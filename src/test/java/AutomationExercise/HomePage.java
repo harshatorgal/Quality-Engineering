@@ -6,13 +6,13 @@ import org.openqa.selenium.WebDriver;
 
 public class HomePage {
     WebDriver driver;
-    By carousel = By.className("fa");
+
     By scrolldown = By.tagName("body");
-    By category = By.className("badge");
+    By category = By.xpath("//a[@href='#Women']");
     By categorySelection = By.linkText("Dress");
     By viewProduct = By.cssSelector("[href=\"/product_details/4\"]");
-    By addToCartButton = By.className("btn");
-    By productPage = By.linkText("[href=\"/products\"]");
+    By addToCartButton = By.xpath("//a[@data-product-id='4']");
+    By productPage = By.cssSelector("a[href='/products']");
     By itemPrice = By.xpath("//p[text()='Stylish Dress']/preceding-sibling::h2");
 
 
@@ -21,8 +21,6 @@ public class HomePage {
     }
 
     public void setHomePage1() {
-        driver.findElement(carousel).click();
-        driver.findElement(carousel).click();
 
         driver.findElement(scrolldown).sendKeys(Keys.PAGE_DOWN);
         driver.findElement(scrolldown).sendKeys(Keys.PAGE_UP);
