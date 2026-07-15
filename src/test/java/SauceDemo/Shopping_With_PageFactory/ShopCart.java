@@ -1,4 +1,4 @@
-package Shoping_With_PageFactory;
+package SauceDemo.Shopping_With_PageFactory;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

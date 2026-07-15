@@ -1,4 +1,4 @@
-package Shoping_With_PageFactory;
+package SauceDemo.Shopping_With_PageFactory;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,6 +13,7 @@ public class ShopLogin {
     WebElement PWD;
     @FindBy(id = "login-button")
     WebElement loginButton;
+
     ShopLogin(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);

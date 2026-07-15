@@ -1,4 +1,4 @@
-package Shoping_Without_PageFactory;
+package SauceDemo.Shopping_Without_PageFactory;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
