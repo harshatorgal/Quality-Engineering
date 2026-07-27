@@ -5,6 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public class TransferFunds {
     WebDriver driver;
@@ -30,19 +33,28 @@ public class TransferFunds {
         transferFundLink.click();
         amt.sendKeys(amount);
 
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
+        wait.until(driver ->
+                new Select(fromAccount).getOptions().size() > 0);
+
+        wait.until(driver ->
+                new Select(toAccount).getOptions().size() > 0);
+
         Select from = new Select(fromAccount);
         from.selectByIndex(fromAcc);
-        System.out.println("from account successful");
+        String fromAccountNumber = from.getFirstSelectedOption().getText();
+
 
         Select to = new Select(toAccount);
         to.selectByIndex(toAcc);
-        System.out.println("to account successful");
+        String toAccountNumber = to.getFirstSelectedOption().getText();
 
         button.click();
         System.out.println("button successful");
 
         if (successMessage.isDisplayed()) {
-            System.out.println("$" + amount + " has been transfered from " + from.getFirstSelectedOption().getText() + " account to" + to.getFirstSelectedOption().getText() + " account successfully");
+            System.out.println("$" + amount + " has been transferred from " + fromAccountNumber + " account to " + toAccountNumber + " account successfully");
 
         } else {
             System.out.println("Transaction is not successful");

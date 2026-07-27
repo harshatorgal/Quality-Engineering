@@ -36,7 +36,7 @@ public class TestClass {
     @Test(priority = 2)
     public void SignIn() {
         SignIn signIn = new SignIn(driver);
-        signIn.setSignIN("SHIVAM", "B", "ABC", "Auckland", "Auckland", "1010", "1234567890", "1122", "shivam201", "1234", "1234");
+        signIn.setSignIN("SHIVAM", "B", "ABC", "Auckland", "Auckland", "1010", "1234567890", "1122", "shivam000", "1234", "1234");
 
     }
 
@@ -45,7 +45,7 @@ public class TestClass {
 
         Login login = new Login(driver);
         login.setLogout();
-        login.setLogin("shivam201", "1234");
+        login.setLogin("shivam000", "1234");
 
 
     }
@@ -71,6 +71,31 @@ public class TestClass {
 
         transferFunds.setTransferFunds("100", 0, 1);
 
+    }
+
+    @Test(priority = 6)
+    public void BillPay() {
+        BillPay billPay = new BillPay(driver);
+
+        billPay.setBillPay("Harsha", "ABC", "Auckland", "Auckland", "1010", "1234567890", "11234", "11234", "50", 0);
+    }
+
+    @Test(priority = 7)
+    public void FindTransactions() {
+        FindTransactions findTransaction = new FindTransactions(driver);
+        findTransaction.setFindTransactions(0, "15031", "07-27-2026", "06-01-2026", "06-30-2026", "50");
+    }
+
+    @Test(priority = 8)
+    public void UpdateContact() {
+        UpdateContact updateC = new UpdateContact(driver);
+        updateC.setUpdateContact("Harsha", "T", "Auckland", "Auckland", "ABC", "1010", "2233445566");
+    }
+
+    @Test(priority = 9)
+    public void RequestLoan(){
+        RequestLoan loan = new RequestLoan(driver);
+        loan.setRequestLoan("10000", "100",0);
     }
 
    /* @AfterTest
