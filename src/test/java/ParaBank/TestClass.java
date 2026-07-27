@@ -4,7 +4,6 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -37,7 +36,7 @@ public class TestClass {
     @Test(priority = 2)
     public void SignIn() {
         SignIn signIn = new SignIn(driver);
-        signIn.setSignIN("SHIVAM", "B", "ABC", "Auckland", "Auckland", "1010", "1234567890", "1122", "shivam06", "1234", "1234");
+        signIn.setSignIN("SHIVAM", "B", "ABC", "Auckland", "Auckland", "1010", "1234567890", "1122", "shivam201", "1234", "1234");
 
     }
 
@@ -46,7 +45,7 @@ public class TestClass {
 
         Login login = new Login(driver);
         login.setLogout();
-        login.setLogin("shivam06", "1234");
+        login.setLogin("shivam201", "1234");
 
 
     }
@@ -55,16 +54,28 @@ public class TestClass {
     public void NewAccount() {
         NewAccount newAccount = new NewAccount(driver);
         newAccount.setNewAccount("SAVINGS", 0);
+        System.out.println("Congratulations, your account is now open");
 
         String AccountID = newAccount.getAccountID();
         System.out.println("Account ID is: " + AccountID);
 
         newAccount.setClickID();
+
+        newAccount.setAccountActivity("August", "Credit");
+
     }
 
-    @AfterTest
+    @Test(priority = 5)
+    public void TransferFunds() {
+        TransferFunds transferFunds = new TransferFunds(driver);
+
+        transferFunds.setTransferFunds("100", 0, 1);
+
+    }
+
+   /* @AfterTest
     public void quit() {
         driver.quit();
-    }
+    }*/
 
 }
