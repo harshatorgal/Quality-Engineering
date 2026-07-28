@@ -15,7 +15,7 @@ public class FindTransactions {
     WebElement accountSelection;
     @FindBy(id = "transactionId")
     WebElement transactionID;
-    @FindBy(id = "c")
+    @FindBy(id = "findById")
     WebElement buttonID;
     @FindBy(id = "transactionDate")
     WebElement transactionDate;

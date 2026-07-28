@@ -36,7 +36,7 @@ public class TestClass {
     @Test(priority = 2)
     public void SignIn() {
         SignIn signIn = new SignIn(driver);
-        signIn.setSignIN("SHIVAM", "B", "ABC", "Auckland", "Auckland", "1010", "1234567890", "1122", "shivam000", "1234", "1234");
+        signIn.setSignIN("SHIVAM", "B", "ABC", "Auckland", "Auckland", "1010", "1234567890", "1122", "shivam20611", "1234", "1234");
 
     }
 
@@ -45,7 +45,7 @@ public class TestClass {
 
         Login login = new Login(driver);
         login.setLogout();
-        login.setLogin("shivam000", "1234");
+        login.setLogin("shivam20611", "1234");
 
 
     }
@@ -93,9 +93,10 @@ public class TestClass {
     }
 
     @Test(priority = 9)
-    public void RequestLoan(){
+    public void RequestLoan() {
         RequestLoan loan = new RequestLoan(driver);
-        loan.setRequestLoan("10000", "100",0);
+        loan.setRequestLoan("10000", "100", 0);
+        loan.setRequestLoan("2000", "100", 0);
     }
 
    /* @AfterTest
