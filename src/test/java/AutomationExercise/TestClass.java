@@ -3,6 +3,7 @@ package AutomationExercise;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -69,5 +70,31 @@ public class TestClass {
         }
     }
 
+    @Test(priority = 5)
+    public void CartCheckoutPage() {
+        CartPage cart = new CartPage(driver);
+        CheckoutPage checkout = new CheckoutPage(driver);
+
+        String firstPrice = cart.getFirstPrice();
+        double fprice = Double.parseDouble(firstPrice.replace("Rs. ", ""));
+
+        String secondPrice = cart.getSecondPrice();
+        double sPrice = Double.parseDouble(secondPrice.replace("Rs. ", ""));
+
+        double total = fprice + sPrice;
+        cart.setCartPage();
+
+        double totalPrice = checkout.getTotalPrice();
+
+        Assert.assertEquals(total, totalPrice, "Total price is correct");
+
+        String deliveryAddress = checkout.getDAddress();
+        String billingAddress = checkout.getBAddress();
+
+        Assert.assertEquals(deliveryAddress, billingAddress, "Address are correct");
+
+        checkout.setCheckoutPage("Good");
+
+    }
 
 }
