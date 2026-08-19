@@ -24,6 +24,7 @@ public class SignUpPage {
     By zipcode = By.id("zipcode");
     By mobileNumber = By.id("mobile_number");
     By button = By.xpath("/button[@data-qa='create-account']");
+    By logoutButton = By.xpath("/a[@href='logout']");
 
     SignUpPage(WebDriver driver) {
         this.driver = driver;
@@ -35,7 +36,7 @@ public class SignUpPage {
         driver.findElement(signButton).click();
     }
 
-    public void setDetails(String pwd, String day, String month, String year, String fname, String lname, String add, int Country, String State, String City, String zip, String mobNumber) {
+    public void setDetails(String pwd, String day, String month, int year, String fname, String lname, String add, int Country, String State, String City, String zip, String mobNumber) {
         driver.findElement(gender).click();
         driver.findElement(PWD).sendKeys(pwd);
 
@@ -49,7 +50,7 @@ public class SignUpPage {
 
         WebElement s_year = driver.findElement(years);
         Select select_year = new Select(s_year);
-        select_year.selectByVisibleText(year);
+        select_year.selectByIndex(year);
 
         driver.findElement(fName).sendKeys(fname);
         driver.findElement(lName).sendKeys(lname);
@@ -64,6 +65,7 @@ public class SignUpPage {
         driver.findElement(zipcode).sendKeys(zip);
         driver.findElement(mobileNumber).sendKeys(mobNumber);
         driver.findElement(button).click();
+        driver.findElement(logoutButton).click();
 
 
     }

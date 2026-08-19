@@ -26,6 +26,6 @@ public class ProductPage {
     public void setProductPage2() {
         driver.findElement(addToCartButton).click();
         driver.findElement(cartPage).click();
-
+        
     }
 }

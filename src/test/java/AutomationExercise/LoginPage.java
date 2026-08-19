@@ -21,7 +21,7 @@ public class LoginPage {
         driver.findElement(logPWD).sendKeys(password);
         driver.findElement(scroll).sendKeys(Keys.PAGE_DOWN);
         driver.findElement(logButton).click();
-
+        
     }
 
     public String getErrorMessage() {
