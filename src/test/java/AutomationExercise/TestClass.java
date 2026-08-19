@@ -4,6 +4,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -95,6 +96,17 @@ public class TestClass {
 
         checkout.setCheckoutPage("Good");
 
+    }
+
+    @Test(priority = 6)
+    public void PaymentPage() {
+        PaymentPage payment = new PaymentPage(driver);
+        payment.setPaymentPage("ASDD", "1234567887654321", "123", "02", "2030");
+    }
+
+    @AfterTest
+    public void quit() {
+        driver.quit();
     }
 
 }
