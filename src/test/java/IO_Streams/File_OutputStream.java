@@ -7,7 +7,7 @@ public class File_OutputStream {
     public static void main(String[] args) {
         try {
             FileOutputStream file = new FileOutputStream("C:\\Users\\harsh\\Java_Codes\\a.txt");
-            String i = "Hello";
+            String i = "This is Java File Handling Concept";
             file.write(i.getBytes());
             System.out.println("Successful");
         } catch (IOException e) {

@@ -9,7 +9,7 @@ public class Buffered_Reader {
         try {
             BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\harsh\\Java_Codes\\a.txt"));
             String i;
-            if ((i = br.readLine()) != null) {
+            while ((i = br.readLine()) != null) {
                 System.out.println(i);
             }
         } catch (IOException e) {
