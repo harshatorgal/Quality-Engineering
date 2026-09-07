@@ -9,7 +9,7 @@ public class WriteFile {
             FileWriter file = new FileWriter("C:\\Users\\harsh\\Java_Codes\\a.txt");
             file.write("This is Java File Handling Concept");
             file.close();
-            System.out.println("Successful");
+            System.out.println("Successfully completed");
         } catch (IOException e) {
             System.out.println("Error");
             e.printStackTrace();

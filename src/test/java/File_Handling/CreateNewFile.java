@@ -8,7 +8,7 @@ public class CreateNewFile {
         try {
             File file = new File("C:\\Users\\harsh\\Java_Codes\\a.txt");
             if (file.createNewFile()) {
-                System.out.println(file.getName() + " has been created");
+                System.out.println(file.getName() + " has been created.");
             } else {
                 System.out.println("File already exists");
             }

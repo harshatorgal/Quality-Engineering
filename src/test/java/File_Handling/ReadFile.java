@@ -12,6 +12,7 @@ public class ReadFile {
             while (input.hasNextLine()) {
                 String a = input.nextLine();
                 System.out.println(a);
+                System.out.println(a);
             }
         } catch (IOException e) {
             System.out.println("Error");
