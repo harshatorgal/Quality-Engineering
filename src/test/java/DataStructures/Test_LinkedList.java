@@ -12,4 +12,4 @@ public class Test_LinkedList {
         System.out.println(abc);
     }
 }
-//Duplicates aren't allowed
+//Duplicates are allowed

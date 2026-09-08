@@ -9,6 +9,7 @@ public class Test_ArrayList {
         city.add("Wellington");
         city.add("Christchurch");
         city.add("Dunedin");
+        city.add("Dunedin");
         System.out.println("Some major cities of NewZealand are:");
         System.out.println(city);
 
