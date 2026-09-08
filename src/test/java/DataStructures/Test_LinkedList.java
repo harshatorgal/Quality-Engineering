@@ -8,8 +8,8 @@ public class Test_LinkedList {
         List<String> abc = new LinkedList<String>();
         abc.add("Java");
         abc.add("List");
+        abc.add("List");
         System.out.println(abc);
     }
-
-
 }
+//Duplicates aren't allowed

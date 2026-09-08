@@ -14,3 +14,4 @@ public class Test_ArrayList {
 
     }
 }
+//Duplicates are allowed

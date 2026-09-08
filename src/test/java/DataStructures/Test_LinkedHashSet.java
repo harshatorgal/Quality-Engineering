@@ -1,11 +1,11 @@
 package DataStructures;
 
-import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.Set;
 
-public class Test_HashSet {
+public class Test_LinkedHashSet {
     public static void main(String[] args) {
-        Set<Integer> abc = new HashSet<Integer>();
+        Set<Integer> abc = new LinkedHashSet<Integer>();
         abc.add(12);
         abc.add(1);
         abc.add(24);
@@ -14,4 +14,4 @@ public class Test_HashSet {
         System.out.println(abc);
     }
 }
-//Elements are not in order
+//Maintains insertion order

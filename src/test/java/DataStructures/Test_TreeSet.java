@@ -1,11 +1,11 @@
 package DataStructures;
 
-import java.util.HashSet;
 import java.util.Set;
+import java.util.TreeSet;
 
-public class Test_HashSet {
+public class Test_TreeSet {
     public static void main(String[] args) {
-        Set<Integer> abc = new HashSet<Integer>();
+        Set<Integer> abc = new TreeSet<Integer>();
         abc.add(12);
         abc.add(1);
         abc.add(24);
@@ -14,4 +14,4 @@ public class Test_HashSet {
         System.out.println(abc);
     }
 }
-//Elements are not in order
+//Sorts automatically
