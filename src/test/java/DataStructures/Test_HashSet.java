@@ -14,4 +14,8 @@ public class Test_HashSet {
         System.out.println(abc);
     }
 }
-//Elements are not in order
+/*
+Duplicates are not allowed
+Elements are not in order
+preferred for add/search/removr
+ */

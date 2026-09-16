@@ -12,4 +12,11 @@ public class Test_LinkedList {
         System.out.println(abc);
     }
 }
-//Duplicates are allowed
+/*
+Duplicates are allowed
+Memory is more because each node is dedicated memory
+Good for inserting/deleting
+Adding/Removing elements at the end is fast
+Adding/Removing elements at the beginning is fast
+Adding/Removing elements at the middle is fast
+ */

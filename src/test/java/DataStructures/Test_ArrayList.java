@@ -29,4 +29,12 @@ public class Test_ArrayList {
 
     }
 }
-//Duplicates are allowed
+/*
+Duplicates are allowed
+Access by index
+Best for reading/searching
+Memory is less
+Adding/Removing elements at the end is usually fast
+Adding/Removing elements at the beginning is slow
+Adding/Removing elements at the middle is slow
+*/

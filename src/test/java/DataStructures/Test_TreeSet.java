@@ -14,4 +14,7 @@ public class Test_TreeSet {
         System.out.println(abc);
     }
 }
-//Sorts automatically
+/*
+Duplicates are not allowed
+Sorts automatically
+ */

@@ -14,4 +14,7 @@ public class Test_LinkedHashSet {
         System.out.println(abc);
     }
 }
-//Maintains insertion order
+/*
+Duplicates are not allowed
+Maintains insertion order
+ */

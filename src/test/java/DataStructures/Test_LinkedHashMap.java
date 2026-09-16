@@ -15,4 +15,8 @@ public class Test_LinkedHashMap {
         System.out.println(abc);
     }
 }
-//Insertion order of keys
+/*
+key->value
+No duplicate for key but yes for value
+Insertion order of keys
+ */

@@ -15,4 +15,8 @@ public class Test_HashMap {
         System.out.println(abc);
     }
 }
-//Order is not maintained
+/*
+key->value
+No duplicate for key but yes for value
+Order is not maintained
+ */

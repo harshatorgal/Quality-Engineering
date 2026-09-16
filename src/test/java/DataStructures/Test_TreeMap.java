@@ -15,4 +15,8 @@ public class Test_TreeMap {
         System.out.println(abc);
     }
 }
-//Sorts keys automatically
+/*
+key->value
+No duplicate for key but yes for value
+Sorts keys automatically
+ */
