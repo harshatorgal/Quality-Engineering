@@ -1,5 +1,3 @@
-package org.example;
-
 public class Recursion {
     static int sum(int n) {
         if (n <= 10) {
