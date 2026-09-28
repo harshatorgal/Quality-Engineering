@@ -1,4 +1,4 @@
-public class Recursion {
+public class recursion {
     static int sum(int n) {
         if (n <= 10) {
             return n + sum(n + 1);
