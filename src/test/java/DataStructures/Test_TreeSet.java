@@ -15,6 +15,6 @@ public class Test_TreeSet {
     }
 }
 /*
-Duplicates are not allowed
+JavaCodes.Duplicates are not allowed
 Sorts automatically
  */

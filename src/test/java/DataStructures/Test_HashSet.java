@@ -15,7 +15,7 @@ public class Test_HashSet {
     }
 }
 /*
-Duplicates are not allowed
+JavaCodes.Duplicates are not allowed
 Elements are not in order
 preferred for add/search/removr
  */

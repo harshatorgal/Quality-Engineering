@@ -15,6 +15,6 @@ public class Test_LinkedHashSet {
     }
 }
 /*
-Duplicates are not allowed
+JavaCodes.Duplicates are not allowed
 Maintains insertion order
  */

@@ -13,7 +13,7 @@ public class Test_LinkedList {
     }
 }
 /*
-Duplicates are allowed
+JavaCodes.Duplicates are allowed
 Memory is more because each node is dedicated memory
 Good for inserting/deleting
 Adding/Removing elements at the end is fast
