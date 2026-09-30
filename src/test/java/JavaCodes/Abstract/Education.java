@@ -1,6 +1,6 @@
 package JavaCodes.Abstract;
 
-abstract class education {
+abstract class Education {
 
     int graduationYear = 2021;
 

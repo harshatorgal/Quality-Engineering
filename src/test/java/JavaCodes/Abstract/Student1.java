@@ -1,10 +1,10 @@
 package JavaCodes.Abstract;
 
-class student2 extends education {
-    int age = 28;
-    String gender = "M";
-    String name = "Shivam";
-    String subjectName = "Science";
+class Student1 extends Education {
+    int age = 27;
+    String gender = "F";
+    String name = "Harsha";
+    String subjectName = "Maths";
 
     public void subject() {
 
