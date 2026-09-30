@@ -14,3 +14,14 @@ public class main {
         s2.remarks();
     }
 }
+
+/*
+can use
+Eduaction s1 = new Student1();
+Education s2 = new Student2();
+
+Education is parent reference
+Student1 and Student2 are the actual object that will be looked for.
+
+using parent reference the code becomes runtime polymorphism(method override)
+ */
