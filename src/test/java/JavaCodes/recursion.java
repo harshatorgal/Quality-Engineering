@@ -22,7 +22,7 @@ public class Recursion{
   if(n>0){
    return n*Factorial(n-1);
   }
-  return 0;
+  return 1;
  }
  public static void main(String args[]){
   int i = Factorial(5);

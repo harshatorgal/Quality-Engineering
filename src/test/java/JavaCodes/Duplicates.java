@@ -16,7 +16,8 @@ package JavaCodes;
 
  */
 
-//Using hashSet because there are 3 a's and to avoid printing 'a' twice, I use hashSet to avoid duplicates getting printed twice
+//Using hashSet because there are 3 a's and to avoid printing 'a' twice,
+// I use hashSet to avoid duplicates getting printed twice
 
 import java.util.HashSet;
 import java.util.Set;

@@ -19,4 +19,5 @@ public class SecondLargest {
         System.out.println(secondLargest);
     }
 }
-//Integer.MIN_VALUE is a predefined constant in Java that represents the smallest possible value an int variable can store.
+//Integer.MIN_VALUE is a predefined constant in Java that represents the
+// smallest possible value an int variable can store.
