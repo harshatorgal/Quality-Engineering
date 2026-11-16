@@ -17,5 +17,5 @@ public class Test_HashSet {
 /*
 JavaCodes.Duplicates are not allowed
 Elements are not in order
-preferred for add/search/removr
+preferred for add/search/remove
  */

@@ -30,7 +30,7 @@ public class Test_ArrayList {
     }
 }
 /*
-JavaCodes.Duplicates are allowed
+Duplicates are allowed
 Access by index
 Best for reading/searching
 Memory is less
